@@ -17,8 +17,6 @@ public class MyDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_USERDATA1);
-        db.execSQL("insert into tb_Books(studentid,studentname,majoy,booknum)Values('2021','张XX','物联','12345')");
-
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
